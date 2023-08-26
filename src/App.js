@@ -30,6 +30,9 @@ function App()
       }, 1500)
     )
 }
+const handlePageTitleChange = (newTitle) => {
+  document.title = newTitle;
+};
   const[mode,setMode]= useState('light');
   const toggleMode = ()=>{
     if(mode==='light')
@@ -53,7 +56,9 @@ function App()
       <div className="container my-3">
       <Switch>
           <Route exact path="/about">
-            <About/>
+            <About
+                handlePageTitleChange={handlePageTitleChange}
+              />
           </Route>
           <Route exact path="/">
           <TextForm heading="Enter your text to analyze here" mode={mode} showAlert={showAlert}/>
