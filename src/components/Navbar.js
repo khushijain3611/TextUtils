@@ -30,9 +30,11 @@ export default function Navbar(props) {
 }
 
 Navbar.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
+  mode: PropTypes.string
 };
 Navbar.defaultProps = {
-  title: "set title"
+  title: "set title",
+  mode: "light"
 };
 

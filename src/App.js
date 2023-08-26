@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+
 } from "react-router-dom";
 
 
@@ -48,12 +48,13 @@ const handlePageTitleChange = (newTitle) => {
       showAlert("Light mode has been enable", "success");
     }
   }
+ 
   return (
     <>
     <Router>
       <Navbar title="TextUtils" mode={mode} toggleMode = {toggleMode}  />
       <Alert alert={alert}/>
-      <div className="container my-3">
+      <div className="container my-5">
       <Switch>
           <Route exact path="/about">
             <About

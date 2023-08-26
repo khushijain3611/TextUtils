@@ -37,10 +37,10 @@ export default function About({ handlePageTitleChange }) {
     }
     
     return (
-        <div className="container" style={myStyle}>
+        <div className="container rounded-3 py-3" style={myStyle}>
             <h1 className="my-3">About Us</h1>
-            <div className="accordion" id="accordionExample">
-                <div className="accordion-item">
+            <div className="accordion rounded" id="accordionExample">
+                <div className="accordion-item ">
                     <h2 className="accordion-header" id="headingOne">
                     <button className="accordion-button" type="button" style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     1. Project Inspiration:
