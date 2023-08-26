@@ -54,7 +54,7 @@ const handlePageTitleChange = (newTitle) => {
     <Router>
       <Navbar title="TextUtils" mode={mode} toggleMode = {toggleMode}  />
       <Alert alert={alert}/>
-      <div className="container my-5">
+      <div className="container my-3">
       <Switch>
           <Route exact path="/about">
             <About
